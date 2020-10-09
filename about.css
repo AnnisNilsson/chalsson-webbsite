@@ -1,0 +1,313 @@
+
+.information-container {
+  background-color: #4e5860;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 2% auto 2% auto;
+  min-height: 33vh;
+  padding: 2%;
+  color: white;
+  animation-name: boxAnimation;
+  animation-duration: 4s;
+  position: relative;
+}
+
+.information-container-2 {
+  background-color: #4e5860;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 2% auto 2% auto;
+  min-height: 33vh;
+  padding: 2%;
+  color: white;
+  animation-name: box2Animation;
+  animation-duration: 4s;
+  position: relative;
+}
+
+@keyframes boxAnimation {
+  0% {
+    left: -700px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes box2Animation {
+  0% {
+    right: -700px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.decoration-box-1,
+.decoration-box-3 {
+  position: absolute;
+  z-index: 0;
+  background: linear-gradient(180deg, #687e84 0%, rgba(255, 255, 255, 0) 100%),
+    #a9cec2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 90%;
+  width: 50%;
+}
+
+.decoration-box-2,
+.decoration-box-4 {
+  position: absolute;
+  z-index: 1;
+  margin: 2% 0 0 5%;
+  background: rgba(169, 206, 194, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 90%;
+  width: 50%;
+}
+
+.decoration-box-3 {
+  margin: 0 0 0 35%;
+}
+.decoration-box-4 {
+  margin: 2% 0 0 40%;
+}
+
+.img-container,
+.img-container-2 {
+  position: absolute;
+  z-index: 2;
+  margin: 5% 0 0 2%;
+  height: 85%;
+  width: 50%;
+  box-sizing: border-box;
+  background-image: url('/img/bilen.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img-container-2 {
+  background-image: url('img/framsida.png');
+  margin: 7% 0 0 30%;
+}
+
+.google-maps {
+  height: 100%;
+  width: 100%;
+}
+
+.text-box {
+  margin: auto 0 auto 0;
+  text-align: right;
+}
+
+.text-box:nth-of-type(odd) {
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .information-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e5860;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 2% auto 2% auto;
+    min-height: 90vh;
+    padding: 2%;
+    color: white;
+    animation-name: boxAnimation;
+    animation-duration: 4s;
+    position: relative;
+  }
+  
+  .information-container-2 {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    background-color: #4e5860;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 2% auto 2% auto;
+    min-height: 90vh;
+    padding: 2%;
+    color: white;
+    animation-name: box2Animation;
+    animation-duration: 4s;
+    position: relative;
+  }
+  
+  @keyframes boxAnimation {
+    0% {
+      left: -700px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  
+  @keyframes box2Animation {
+    0% {
+      right: -700px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+  
+  .decoration-box-1,
+  .decoration-box-3 {
+display: none;
+  }
+  
+  .decoration-box-2,
+  .decoration-box-4 {
+display: none;
+  }
+  
+  .decoration-box-3 {
+    margin: 0 0 0 35%;
+  }
+  .decoration-box-4 {
+    margin: 2% 0 0 40%;
+  }
+  
+  .img-container,
+  .img-container-2 {
+    position: absolute;
+    z-index: 2;
+    margin-left: 18% ;
+    height: 50%;
+    width: 50%;
+    box-sizing: border-box;
+    background-image: url('/img/bilen.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .img-container-2 {
+    background-image: url('img/framsida.png');
+    margin-left: 18%;
+  }
+  
+  .google-maps {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .text-box {
+    height: 50%;
+    margin: auto 0 auto 0;
+    text-align: center;
+  }
+  
+  .text-box:nth-of-type(odd) {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+.information-container {
+  background-color: #4e5860;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 2% auto 2% auto;
+  min-height: 33vh;
+  padding: 2%;
+  color: white;
+  animation-name: boxAnimation;
+  animation-duration: 4s;
+  position: relative;
+}
+
+.information-container-2 {
+  background-color: #4e5860;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 2% auto 2% auto;
+  min-height: 33vh;
+  padding: 2%;
+  color: white;
+  animation-name: box2Animation;
+  animation-duration: 4s;
+  position: relative;
+}
+
+@keyframes boxAnimation {
+  0% {
+    left: -700px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes box2Animation {
+  0% {
+    right: -700px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.decoration-box-1,
+.decoration-box-3 {
+  position: absolute;
+  z-index: 0;
+  background: linear-gradient(180deg, #687e84 0%, rgba(255, 255, 255, 0) 100%),
+    #a9cec2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 90%;
+  width: 50%;
+}
+
+.decoration-box-2,
+.decoration-box-4 {
+  position: absolute;
+  z-index: 1;
+  margin: 2% 0 0 5%;
+  background: rgba(169, 206, 194, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 70%;
+  width: 60%;
+}
+
+.decoration-box-3 {
+  margin: 0 0 0 28%;
+}
+.decoration-box-4 {
+  margin: 2% 0 0 35%;
+}
+
+.img-container,
+.img-container-2 {
+  position: absolute;
+  z-index: 2;
+  margin: 5% 0 0 2%;
+  height: 85%;
+  width: 50%;
+  box-sizing: border-box;
+  background-image: url('/img/bilen.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img-container-2 {
+  background-image: url('img/framsida.png');
+  margin: 7% 0 0 30%;
+}
+
+.google-maps {
+  height: 100%;
+  width: 100%;
+}
+
+.text-box {
+  margin: auto 0 auto 0;
+  text-align: right;
+}
+
+.text-box:nth-of-type(odd) {
+  text-align: left;
+}
+}
